@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "EmployeeList";
+}
+
+<h2>EmployeeList</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <td>EmployeeId</td>
+        <td>Name</td>
+    </tr>
+
+
+    @foreach (var od in Model)
+    {
+
+        <tr>
+            
+            <td>@od.EmployeeId</td>
+            <td>@od.Name</td>
+
+
+        </tr>
+
+
+    }
+
+</table>

@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "ShowCompleteRequest";
+}
+
+<h2>Complete Request</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>CollectRequestId</th>
+        <th>Food</th>
+        <th>RequestDate</th>
+        <td>ExpirationDate</td>
+        <td>RestaurantId</td>
+        <td>EmployeeId</td>
+        <td>Status</td>
+    </tr>
+
+
+    @foreach (var od in Model)
+    {
+
+        <tr>
+            <td>@od.CollectRequestId</td>
+            <td>@od.FoodItem</td>
+            <td>@od.RequestDate</td>
+            <td>@od.ExpirationDate</td>
+            <td>@od.RestaurantId</td>
+            <td>@od.EmployeeId</td>
+            <td>@od.Status</td>
+            
+
+
+        </tr>
+
+
+    }
+
+</table>
+
